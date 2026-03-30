@@ -26,8 +26,11 @@ body {
 main {
   @apply min-h-screen pt-10;
 }
+/*h1 {*/
+/*  @apply max-sm:text-[3rem] text-6xl text-gradient xl:tracking-[-2px] font-semibold;*/
+/*}*/
 h1 {
-  @apply max-sm:text-[3rem] text-6xl  text-gradient leading-tight xl:tracking-[-2px] font-semibold;
+  @apply max-sm:text-[3rem] text-6xl xl:tracking-[-2px] font-bold animate-in;
 }
 
 h2 {
@@ -78,7 +81,7 @@ form {
     @apply flex flex-col items-center gap-8 pt-12 max-sm:mx-2 mx-15 pb-5;
   }
   .page-heading {
-    @apply flex flex-col items-center gap-8 max-w-4xl text-center max-sm:gap-4;
+    @apply flex flex-col items-center gap-4 max-w-3xl text-center max-sm:gap-4 max-lg:gap-4;
   }
   .resumes-section {
     @apply flex flex-wrap max-md:flex-col max-md:gap-4 gap-6 items-start max-md:items-center w-full max-w-462.5 justify-evenly;
@@ -129,7 +132,8 @@ form {
 }
 
 @utility primary-gradient {
-  background: linear-gradient(to bottom, #8e98ff, #606beb);
+  /*background: linear-gradient(to bottom, #8e98ff, #606beb);*/
+  background: linear-gradient(to bottom, dodgerblue, rgb(98 106 206 / 0.8));
   box-shadow: 0 74px 21px 0 #6678ef00;
 }
 
@@ -149,4 +153,10 @@ form {
   to {
     opacity: 1;
   }
+}
+.gradient-text {
+  background: linear-gradient(135deg, #1124ff 0%, rgb(92 4 180 / 0.82) 50%, rgb(5 51 245 / 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

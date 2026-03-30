@@ -15,8 +15,12 @@ export default function Home() {
         <Navbar/>
         <section className="main-section">
             <div className="page-heading">
-                <h1>Track your Applications & Resume Ratings</h1>
-                <h2>Review your submissions & check AI powered feedback.</h2>
+                <h1 className="">
+                    <span className="block">Your Resume, </span>
+                    <span className="block text-blue-700 gradient-text">Ruthlessly Honest.</span>
+                    <span className="text-gray-600">Finally.</span>
+                </h1>
+                {/*<h2>Review your submissions & check AI powered feedback.</h2>*/}
             </div>
         </section>
 
