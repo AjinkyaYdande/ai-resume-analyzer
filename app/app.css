@@ -88,7 +88,7 @@ form {
   }
 
   .resume-card {
-    @apply flex flex-col gap-8 h-140 w-87.5 lg:w-107.5 xl:w-122.5 bg-white rounded-2xl p-4;
+    @apply flex flex-col gap-2 h-120 w-87.5 lg:w-90.5 xl:w-100.5 bg-white rounded-2xl p-4 border;
   }
 
   .resume-card-header {
